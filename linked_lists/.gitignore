@@ -1,0 +1,48 @@
+# 💻 OS-specific files
+.DS_Store
+Thumbs.db
+
+# 🧵 Compiled binary files
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# 🧪 Test files
+*.log
+*.tmp
+
+# 🚀 Build directories
+build/
+dist/
+bin/
+debug/
+release/
+
+# 📦 IDE-specific folders/files
+
+# VS Code
+.vscode/
+
+# CLion / JetBrains
+.idea/
+
+# Xcode
+*.xcworkspace
+*.xcodeproj
+
+# Code::Blocks
+*.layout
+*.depend
+*.cbp
+
+# DevC++
+*.dev
+
+# 🧹 Miscellaneous
+*.swp
+*.bak
+*.old

@@ -1,30 +1,29 @@
 #include<iostream>
 using namespace std;
 
-void last(int arr[],int key,int len){
+void bin(int arr[],int key,int len){
     int start = 0;
     int end = len-1;
-    int ans = -1;
     while(start<=end){
         int mid = start+(end-start)/2;
         if(arr[mid]==key){
-            ans = mid;
-            start = mid +1;
-         }
-        else if(arr[mid]<key){
-            start = mid+1;
-         }
-         else{
+            cout<<"At index: "<<mid;
+            break;
+        }
+        else if(arr[mid]>key){
             end = mid-1;
-         }
+        }
+        else{
+            start = mid+1;
+        }
     }
-    cout<<ans;
 }
 
 int main(){
-    int arr[5] = {1,2,3,5,5};
+
+    int arr[5] = {1,2,3,4,5};
     int len = sizeof(arr)/sizeof(arr[0]);
     int key = 5;
-    last(arr,key,len);
+    bin(arr,key,len);
     return 0;
 }
